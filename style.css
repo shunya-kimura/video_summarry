@@ -1,0 +1,67 @@
+/* 全体の背景とフォント */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1e; /* ダークグレーの背景 */
+    color: #f5f5f5; /* テキストカラーを淡いホワイトに */
+    padding: 20px;
+    margin: 0;
+}
+
+/* ヘッダーのスタイル */
+h1 {
+    color: #d4af37; /* ゴールドのような色 */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+/* 動画リストのスタイル */
+#videoList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* 各動画の間に均等なスペース */
+}
+
+/* 各動画アイテムのスタイル */
+.video-item {
+    background-color: #2c2c2e; /* 少し明るいダークグレーで動画部分を区別 */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: calc(33% - 20px); /* 3列で並べる */
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.video-item:hover {
+    transform: scale(1.05); /* マウスホバー時に少し拡大 */
+}
+
+/* サムネイル画像のスタイル */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* タイトルのスタイル */
+p {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* 長いタイトルは省略表示 */
+    color: #f5f5f5; /* 高級感を保つため淡い色 */
+}
+
+/* リンクのスタイル */
+a {
+    color: #d4af37; /* ゴールド色のリンク */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* ホバー時の強調 */
+}
